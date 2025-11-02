@@ -21,8 +21,8 @@ fn detect_delimiter(path: &str) -> char {
 }
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let csv_path = "yandexeda.csv";
-    let db_path = "yandexeda.db";
+    let csv_path = ".csv";
+    let db_path = ".db";
     let batch_size = 100000usize; // <-- можешь менять
 
     println!("📦 Конвертация CSV → SQLite (FTS5)");
